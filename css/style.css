@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    /* remove margin from all elements */
+    box-sizing: border-box;
+    /* solve border and padding issues */
+}
+
+body {
+    height: 500000px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* -------------------------------------------------------- */
+.chefs {
+    background-color: #eee;
+    padding: 40px 0px;
+
+}
+
+
+.chefs .title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chefs .title p {
+    color: #7f7f90;
+
+    text-transform: uppercase;
+}
+
+.chefs .title h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+
+}
+
+.chefs .title h2 span {
+    color: #ce1212;
+    font-family: 'Amatic SC', cursive;
+}
+
+.player-section {
+    padding: 100px 0;
+    background-color: #212121;
+}
+
+.player-section .player {
+    width: 24%;
+    border: 1px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+.player-section .player img {
+    width: 100%;
+    transition: transform 1s 1s;
+}
+
+.player-section .player .info {
+    background-color: rgba(100, 60, 180, 0.3);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 1s;
+}
+
+.player-section .player .info h3 {
+    padding: 10px 0;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.player-section .player .info p {
+    color: white;
+    font-style: italic;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.player-section .player .info h3,
+.player-section .player .info p {
+    position: relative;
+    left: 120%;
+    transition: left 1s 2s;
+}
+
+
+.player-section .player:hover .info {
+    transform: rotate(360deg);
+}
+
+.player-section .player:hover img {
+    transform: scale(1.1);
+}
+
+.player-section .player:hover .info h3,
+.player-section .player:hover .info p {
+    left: 0;
+}
+
+/* ------------------------------------------- */
+.chefs {
+    padding: 100px 0;
+    background-color: #eee;
+}
+
+
+.relative {
+    position: relative;
+}
+
+.chefs .chef {
+    width: 32%;
+    border: 1px solid white;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.chefs .chef .icons {
+    background-color: rgba(245, 245, 245, 0.4);
+    width: fit-content;
+    padding: 5px 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    right: -60px;
+    transition: right 0.5s 0.5s;
+}
+
+.chefs .chef .icons i {
+    font-size: 25px;
+    display: block;
+    margin: 10px;
+}
+
+
+.chefs .chef img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+}
+
+.chefs .chef p {
+    margin: 10px 0;
+    color: grey;
+    font-style: italic;
+}
+
+.chef:hover {
+    transform: scale(1.1);
+}
+
+.chef:hover .relative .icons {
+    right: 15px;
+}
